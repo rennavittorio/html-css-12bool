@@ -1,0 +1,66 @@
+[class^="col-"],
+.hidden-mobile,
+.hidden-tablet {
+    background-color: coral;
+    color: red;
+    border: 2px solid transparent;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden-mobile,
+.hidden-tablet {
+    display: none;
+}
+
+* {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* breakpoint utilizzati (mobile-first approach):
+--> xs = 0-575px (defaul secondo approccio)
+--> sm = 576-767px
+--> md = 768-991px
+--> lg = 992px and above */
+
+@media all and (min-width: 576px) {
+    .hidden-mobile {
+        display: block;
+    }
+
+    [class^="col-"],
+    .hidden-mobile {
+        color: yellow;
+        background-color: orange;
+    }
+
+    
+}
+
+@media all and (min-width: 768px) {
+    .hidden-tablet {
+        display: block;
+    }
+
+    [class^="col-"],
+    .hidden-mobile,
+    .hidden-tablet {
+        color: lightgreen;
+        background-color: green;
+    }
+}
