@@ -31,7 +31,7 @@ ul, ol, li, menu {
 /* framework rules */
 /* container */
 .container {
-    max-width: 1170px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 calc(var(--gutter-x) / 2);
 }
@@ -166,7 +166,7 @@ non serve per gestire i gutter */
 }
 
 .col-offset-10 {
-    margin-left: calc((100% / 12) * 1)0;
+    margin-left: calc((100% / 12) * 10);
 }
 
 .col-offset-11 {
@@ -293,7 +293,7 @@ breakpoint utilizzati (mobile-first approach):
     }
     
     .col-sm-offset-10 {
-        margin-left: calc((100% / 12) * 1)0;
+        margin-left: calc((100% / 12) * 10)
     }
     
     .col-sm-offset-11 {
@@ -401,7 +401,7 @@ breakpoint utilizzati (mobile-first approach):
     }
     
     .col-md-offset-10 {
-        margin-left: calc((100% / 12) * 1)0;
+        margin-left: calc((100% / 12) * 10);
     }
     
     .col-md-offset-11 {
@@ -509,7 +509,7 @@ breakpoint utilizzati (mobile-first approach):
     }
     
     .col-lg-offset-10 {
-        margin-left: calc((100% / 12) * 1)0;
+        margin-left: calc((100% / 12) * 10);
     }
     
     .col-lg-offset-11 {

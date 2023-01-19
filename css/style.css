@@ -1,10 +1,25 @@
+:root {
+    --lightblue: #006cfa;
+    --lightgreen: #00e066;
+}
+
 [class^="col"] {
-    padding: 10px;
-    background-color: darkblue;
     color: white;
-    border: 2px solid salmon;
+    background-color: var(--lightblue);
+    border: 2px solid white;
+    padding: 20px;
+    text-align: center;
 }
 
 section {
     padding: 20px 0;
+}
+
+.col-nested {
+    background-color: var(--lightgreen);
+}
+
+.transparent {
+    background-color: transparent;
+    color: transparent;
 }
