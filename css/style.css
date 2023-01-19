@@ -1,14 +1,17 @@
 :root {
     --lightblue: #006cfa;
     --lightgreen: #00e066;
+
+    --no-gutter: 0;
 }
 
 [class^="col"] {
     color: white;
     background-color: var(--lightblue);
     border: 2px solid white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+
 }
 
 section {

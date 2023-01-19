@@ -34,7 +34,7 @@ ul, ol, li, menu {
 .container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 calc(var(--no-gutter) / 2);
+    padding: 0 calc(var(--gutter-x) / 2);
 }
 
 /* row */
@@ -43,12 +43,12 @@ ul, ol, li, menu {
     flex-direction: row;
     /* questa regola può essere omessa perché di default */
     flex-wrap: wrap;
-    margin-left: calc(var(--no-gutter) / 2);
-    margin-right: calc(var(--no-gutter) / 2);
+    margin-left: calc(var(--gutter-x) / 2 * -1);
+    margin-right: calc(var(--gutter-x) / 2 * -1);
 }
 
 .row > * {
-    padding: 0 calc(var(--no-gutter) / 2);
+    padding: 0 calc(var(--gutter-x) / 2);
 }
 
 /* cols */
